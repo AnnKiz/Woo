@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WooShop </title>
+    
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: rgb(213, 213, 213);
+}
+.Menu{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+}
+.Menu li{
+  padding :6px 10px ;
+  float: left;
+}
+.Menu li:hover{
+  background-color:#ddd;
+}
+.Menu li a{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #111112;
+  text-decoration: none;
+  font-size: 15px;
+}
+.Menu li a:hover{
+  color: #0088a9;
+}
+.Login {
+  margin-left: 580px;
+  padding: 7px 20px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  text-decoration: none;
+}
+.dau{
+  margin-top: -5px;
+  font-size: 27px;
+  color: #939393;
+}
+.dau::after{
+ color: #ddd;
+ 
+}
+
+.Login:hover {
+  background-color: #df2359;
+}
+a{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #111112;
+  text-decoration: none;
+  font-size: 15px;
+}
+.SignUp {
+  padding: 7px 20px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+  text-decoration: none;
+}
+.SignUp:hover {
+  background-color: #df2359;
+}
+.Main{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50%;
+} 
+.Main a{
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content:space-around;
+  color: #00B4CC;
+
+
+}
+.Main input
+{
+   height: 40px;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-top: -250px;  
+  margin-left: 400px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 80px;
+  height: 40px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 9px 9px 0;
+  cursor: pointer;
+  font-size: 20px;
+  
+}
+
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+  </style>
+    <body>
+        <header>
+            <nav>
+                <ul class="Menu">
+                    <li><a href="#">Cửa Hàng</a></li>
+                    <a class="dau">|</a>
+                    <li><a href="#">Hotline: 0909 787 899</a></li>
+                    <a class="dau">|</a>
+                    <li><a href="#">Trợ giúp</a></li>
+                </ul>
+            </nav>
+            <a class="Login" href="Login.html">Đăng nhập </a>
+            <a class="dau">|</a>
+            <a class="SignUp" href="Login.html">Đăng ký</a>
+        </header>
+        <main> 
+          <div class="Main">
+              <a href="TrangChu.html"><img src="wooshop-logo.png" width="380px" height="220px" title="WooShop - Siêu thị nội thật & trang trí" > <b style="margin-top: 90px;">Siêu thị nội thất & trang trí</b> </a>
+              <div class="wrap">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="Tìm kiếm ....">
+                   <button type="submit" class="searchButton" >
+                      <ion-icon name="search-outline"></ion-icon>
+                  </button>
+                </div>
+             </div>
+             </div>
+            
+          </div>
+        </main>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
