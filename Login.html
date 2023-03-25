@@ -90,6 +90,12 @@
     button:hover{
         background-color: #00B8A9;
     }
+    input:invalid{
+    border-bottom: 2px solid #e70041 ;
+    }
+    input:valid{
+        border-bottom: 2px solid #23d346;
+    }
 
 </style>
 <body>
@@ -99,12 +105,12 @@
             <h1>Đăng Nhập</h1><br>
             <form action="#" method="post"> 
             <ion-icon name="person-outline"></ion-icon>
-            <p>Tên Đăng nhập</p><br>
-            <input type="text" placeholder="Tên đăng nhập">
+            <p>Email</p><br>
+            <input type="email" placeholder="Tên đăng nhập">
             <ion-icon name="key-outline"></ion-icon>
             <p>Mật khẩu</p><br>
-            <input type="text" placeholder="Mật khẩu"><br>
-            <button type="submit">Đăng nhập</button>
+            <input type="password   " placeholder="Mật khẩu" minlength="5"><br>
+            <button type="submit" href="TrangChu.html">Đăng nhập</button>
             </form>
     </div>
 </div>
