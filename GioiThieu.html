@@ -21,7 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 5%;
-    background-color: rgb(240, 240, 240);
+ background-color: rgb(240, 240, 240);
 }
 .Menu{
   display: flex;
@@ -228,7 +228,109 @@ a{
    .Gioithieu{
     padding-top: 2.5%;
     padding-left: 3%;
+    padding-bottom: 10%;
    }
+
+   .container1{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h3{
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+
+
+}
+.footer-col p{
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
 
   </style>
     <body>
@@ -273,7 +375,7 @@ a{
 <section class="Gioithieu"> 
         <div class="secondwrap">
           <div class="Introduce"><h1>CỬA HÀNG NỘI THẤT WOOSHOP</h1></div>
-          <hr style="width: 360px;margin-left: 94%;margin-top: 5px"/>
+          <hr style="width: 360px;margin-left: 91%;margin-top: 5px"/>
           </div>
           <div class="picture"><img src="GioiThieu.png" alt=""></div>
           <div class="textwrap">
@@ -294,6 +396,46 @@ a{
           </div>
         </section>
           
+
+        <footer class="footer">
+          <div class="container1">
+           <div class="row">
+            <div class="footer-col">
+              <h4>WOOSHOP</h4>
+              <h3>CỬA HÀNG NỘI THẤT WOOSHOP</h3><br>
+              <h3> Địa chỉ : 140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, Tp.HCM</h3>
+            </div>
+             <div class="footer-col">
+               <h4>Về WOOSHOP</h4>
+               <ul>
+                 <li><a href="#">Cửa Hàng</a></li>
+                 <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+                 <li><a href="#">Khuyến Mãi</a></li>
+                 <li><a href="#">FAQS</a></li>
+               </ul>
+             </div>
+            
+             <div class="footer-col">
+               <h4>Danh mục sản phẩm</h4>
+               <ul>
+                 <li><a href="#">Bàn</a></li>
+                 <li><a href="#">Ghế</a></li>
+                 <li><a href="#">Nội thất gia đình</a></li>
+                 <li><a href="#">Trường học</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Tìm chúng tôi tại</h4>
+               <div class="social-links">
+                 <a href="#"><i class="fab fa-facebook-f"> <ion-icon name="logo-facebook"></ion-icon></i></a>
+                 <a href="#"><i class="fab fa-twitter"><ion-icon name="logo-twitter"></ion-icon></i></a>
+                 <a href="#"><i class="fab fa-instagram"><ion-icon name="logo-instagram"></ion-icon></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"><ion-icon name="logo-linkedin"></ion-icon></i></a>
+               </div>
+             </div>
+           </div>
+          </div>
+       </footer>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
